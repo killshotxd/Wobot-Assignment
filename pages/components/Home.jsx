@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "../../styles/Home.module.css";
 import { SiFlutter } from "react-icons/si";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Home = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   const handleClick = (event) => {
     if (event.currentTarget.style.backgroundColor) {
       event.currentTarget.style.backgroundColor = null;
@@ -22,7 +30,12 @@ const Home = () => {
 
       {/* Card Container */}
       <div className={styles.bgContainer}>
-        <div className={styles.cardCenter}>
+        <div
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+          className={styles.cardCenter}
+        >
           <div className={styles.cardComponent}>
             <div className={styles.centerPara}>
               <SiFlutter className={styles.svgP} size={40} />
@@ -69,6 +82,12 @@ const Home = () => {
             <div className={styles.mainBtn}>
               <button className={styles.primeBtn}>Let's Get Started</button>
             </div>
+          </div>
+
+          <div className={styles.footer}>
+            <p>Terms of Use</p>
+            <p>|</p>
+            <p>Privacy policy</p>
           </div>
         </div>
       </div>
