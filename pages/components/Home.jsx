@@ -57,9 +57,11 @@ const Home = () => {
                 <option value="It">IT</option>
                 <option value="It">IT</option>
               </select>
+              <label>Company Size</label>
             </div>
 
             {/* Button for selection */}
+
             <div className={styles.selectComp}>
               <button onClick={handleClick} className={styles.selectBtn}>
                 1-20
