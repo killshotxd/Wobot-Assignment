@@ -62,7 +62,7 @@
 }
 
 .selectBtn {
-  background-color: rgb(193, 191, 191);
+  background-color: rgb(251, 243, 243);
   color: #000;
   border: none;
   border-radius: 1rem;
@@ -76,10 +76,10 @@
   color: white;
 }
 
-/* .selectBtn:hover {
-  background: blue;
+.selectBtn:hover {
+  background: rgb(163, 163, 220);
   color: white;
-} */
+}
 
 .mainBtn {
   display: flex;

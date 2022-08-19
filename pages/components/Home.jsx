@@ -82,7 +82,7 @@ const Home = () => {
 
             {/* Main Button */}
             <div className={styles.mainBtn}>
-              <button className={styles.primeBtn}>Let's Get Started</button>
+              <button className={styles.primeBtn}>Get Started</button>
             </div>
           </div>
 
